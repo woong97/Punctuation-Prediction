@@ -1,0 +1,7 @@
+numpy==1.21.5
+PyYAML==6.0
+sentencepiece==0.1.96
+tensorboard==2.7.0
+torch==1.6.0
+tqdm==4.62.3
+transformers==4.6.1

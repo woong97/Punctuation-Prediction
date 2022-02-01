@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+__pypackages__/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+myenv/
+myvenv/
+env.bak/
+venv.bak/
+
+.DS_Store
+.idea/
+
+data/
+runs/
+output/

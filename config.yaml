@@ -1,0 +1,46 @@
+punctuation:
+  ".": "<PERIOD>"
+  "?": "<QUESTION>"
+
+split_ratio:
+  "train": 0.93
+  "valid": 0.05
+  "test": 0.02
+
+net:
+  ngpu: 1
+  epochs: 20
+  batch_size: 256
+  evaluate_during_training: true
+  resume_from_checkpoint: false
+  max_checkpoints: 5
+
+  loss_reduction: "sum"
+
+  lr: 0.0001
+  grad_norm: 1.0
+
+  scheduler:
+    name: "reduce"
+    factor: 0.7
+    patience: 3
+
+  logging_steps: 500
+  valid_every: 50000
+
+model:
+  num_layers: 6
+  embedding_dim: 256
+  max_position_len: 200
+  dropout: 0.15
+
+  hidden_size: 512
+  num_heads: 4
+  attn_layer_norm_eps: 1e-06
+
+  ff_intermediate_size: 1024
+  activation_fn: "relu"
+  ff_layer_norm_eps: 1e-06
+
+  out_middle_dim: 256
+  out_layer_norm_eps: 1e-06
